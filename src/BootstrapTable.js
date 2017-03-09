@@ -380,6 +380,7 @@ class BootstrapTable extends Component {
             expandComponent={ this.props.expandComponent }
             expandableRow={ this.props.expandableRow }
             expandRowBgColor={ this.props.options.expandRowBgColor }
+            expandRowClassName={ this.props.options.expandRowClassName }
             expandBy={ this.props.options.expandBy || Const.EXPAND_BY_ROW }
             columns={ columns }
             trClassName={ this.props.trClassName }
@@ -1373,6 +1374,7 @@ BootstrapTable.propTypes = {
     paginationPanel: PropTypes.func,
     searchPosition: PropTypes.string,
     expandRowBgColor: PropTypes.string,
+    expandRowClassName: PropTypes.string,
     expandBy: PropTypes.string,
     expanding: PropTypes.array,
     beforeShowError: PropTypes.func
@@ -1515,6 +1517,7 @@ BootstrapTable.defaultProps = {
     paginationPanel: undefined,
     searchPosition: 'right',
     expandRowBgColor: undefined,
+    expandRowClassName: undefined,
     expandBy: Const.EXPAND_BY_ROW,
     expanding: [],
     beforeShowError: undefined
